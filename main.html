@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Imports tensorflow.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@2.0.0/dist/tf.min.js"></script>
+    
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Classifier</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="icon" href="https://www.freeiconspng.com/thumbs/camera-icon/camera-icon-21.png">
+</head>
+
+<!-- Body -->
+<body>
+    <h1>Tensorflow Image Classifier</h1>
+    <br>
+    <hr>
+    <p>Welcome to my tensorflow image classification project. This project uses a combination of tensorflow js and tensorflow py.  This A.I. recognize 4 different anime characters.</p>
+    <a href="description.html">Learn more Here</a>
+    <hr>
+    <h2>Trained Image Classifier AI:</h2>
+    <h3>
+        <input type="file" id="img" name="img" accept="image/*">
+    </h3>
+    <button onclick="predict()">Predict</button>
+    <h4>
+        <img id="previewImage" src="">
+    </h4>
+    <h5 id="results">
+        A.I. Prediction: 
+    </h5>
+    <br>
+    <hr>
+    <p>The reason why the image is distorted is because the A.I. was trained using 180x180 images. Thus, we need to alter the image size to fit the trained model's needs.</p>
+    <p>Note: The A.I. won't always get it right. Also, you need to be connected to the internet in order for the AI to work!</p>
+    <hr>
+
+
+    <!-- Script -->
+    <script src="script.js"></script>
+</body>
+</html>
